@@ -17,7 +17,7 @@ NR=a=>a*(R()-R()+R()-R()); // approx "normal" distributed random between -2 and 
 
 // rotating vec2 function
 // f = frequency, p = phase, a = amplitude, t = time
-// when t goes from 0 to 1, the vector will turn f times
+// when t goes from 0 to 1, the vector will turn f times, offset by phase p
 E=(f,p,a,t)=>[a*s(t=f*t*T+p*T),a*c(t)];
 
 // oscillating (scalar) function
